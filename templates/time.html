@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<form method="post">
+    {% csrf_token %}
+    <div class="form-group">
+        <h4>Enter Days</h4>
+        <input type="text" name="days">
+
+    <input type="submit" class="btn btn-danger">
+        </div>
+
+
+</form>
+
+
+
+
+
+<h1>{{obj2.years}}</h1>
+<h1>hai</h1>
+
+<!-- 
+<h1>{{month}}</h1>
+
+<h1>{{day}}</h1> -->
+{% endblock %}

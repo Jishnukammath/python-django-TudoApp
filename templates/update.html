@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<form method="post">
+                {% csrf_token %}
+                {{forms.as_p}}
+                <div class="form-group">
+
+                <input type="submit" class="btn btn-danger">
+                    </div>
+
+
+            </form>
+
+{% endblock %}
